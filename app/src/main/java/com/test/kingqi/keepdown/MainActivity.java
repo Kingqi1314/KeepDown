@@ -386,7 +386,7 @@ public class MainActivity extends BaseActivity
                     RequestBody requestBody=RequestBody.create(MediaType.parse("application/json; charset=utf-8"),string);
                     Request request=new Request.Builder()
                             .post(requestBody)
-                            .url("http://118.25.71.102:10086")
+                            .url("http://***********:10086")
                             .build();
                     Response response=client.newCall(request).execute();
                     JSONObject object=new JSONObject(response.body().string());
